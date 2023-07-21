@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Dear All,</p>
+    <p>We are happy to inform you that your 2022-23 India (In) Income Tax Return has been electronically filed with the Income
+        Tax Department (acknowledgement uploaded in your myMobility account for your reference).</p>
+    <p>Password to open the document is your Date of Birth in ddmmyyyy format.</p>
+    <p>Next action required from you: e-verification of your filed Income Tax Return (guide attached below)</p>
+    <ul>
+        <li>The time limit for e-verification is 30 days from the date of filing your tax return. Failure to e-verify within
+            the prescribed timeline will lead to your tax return being considered invalid and may also have monetary
+            consequences.</li>
+        <li>Please login to your e-filing account on <a href="https://www.incometax.gov.in/iec/foportal/">https://www.incometax.gov.in/iec/foportal/</a>
+            and follow the steps mentioned in the guide to e-verify your Income Tax Return.</li>
+        <li>Post e-verification, share with us the Form ITR-V (acknowledgment for having filed your Income Tax Return) once
+            you have completed the process.</li>
+    </ul>
+    <p>What if you are unable to e-verify?</p>
+    <p>There is an alternative mechanism for physical filing of documents, but the time limit has now been shortened to 30
+        days instead of the erstwhile 120 days. Hence, please opt for this process only if you are confident of the signed
+        documents positively reaching the tax department within the deadline of 30 days from the actual date of filing
+        your tax return (as reflected in Form ITR-V).</p>
+    <p>In this regard, we request you to:</p>
+    <ul>
+        <li>Login to your myMobility account and download the one pager Form ITR V for FY 2022-23 (AY 2023-24).</li>
+        <li>Arrange to send TWO copies of duly signed Form ITR-V (in blue ink) to the below address so as to reach the CPC
+            office within 30 days from the actual date of e-filing your tax return.</li>
+        <li>Share a colored scanned copy of the signed ITR V and tracking details with us for our reference and record.</li>
+    </ul>
+    <p>Address:</p>
+    <address>
+        Centralized Processing Centre - Income Tax Department<br>
+        Post Box No.1 Electronic City Post Office<br>
+        Bengaluru, Karnataka 560500
+    </address>
+    <p>Note: Please do not fold the ITR V and read the instructions listed in it before sending the same.</p>
+    <p>This will complete the process regarding your 2022-23 India Income Tax Return filing.</p>
+    <p>We appreciate your support and patience during the entire return preparation and filing process.</p>
+    <p>Should you have any questions, please do not hesitate to contact us.</p>
+    <p>Best regards,</p>
+</body>
+
+</html>
