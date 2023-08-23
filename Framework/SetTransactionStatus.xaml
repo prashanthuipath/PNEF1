@@ -633,7 +633,7 @@
                   <av:Size x:Key="ShapeSize">200,180</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="If a system exception occurs during the process, the transaction item's status is updated as Failed (Exception Type: Application)." DisplayName="System Exception" sap:VirtualizedContainerService.HintSize="646.6666666666666,2698.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_31">
+              <Sequence sap2010:Annotation.AnnotationText="If a system exception occurs during the process, the transaction item's status is updated as Failed (Exception Type: Application)." DisplayName="System Exception" sap:VirtualizedContainerService.HintSize="646.6666666666666,1399.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_31">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="QueueRetry" />
                   <Variable x:TypeArguments="x:String" Name="SysScreenshotPath" />
@@ -654,23 +654,23 @@
                     <InArgument x:TypeArguments="x:Boolean">[in_TransactionItem isNot Nothing AndAlso (in_TransactionItem.GetType is GetType(UiPath.Core.QueueItem))]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <TryCatch sap2010:Annotation.AnnotationText="Take a screenshot of the current state of the screen to facilitate debugging." DisplayName="Try taking screenshot" sap:VirtualizedContainerService.HintSize="584.6666666666666,1415.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_15">
+                <TryCatch sap2010:Annotation.AnnotationText="Take a screenshot of the current state of the screen to facilitate debugging." DisplayName="Try taking screenshot" sap:VirtualizedContainerService.HintSize="584.6666666666666,116" sap2010:WorkflowViewState.IdRef="TryCatch_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence sap:VirtualizedContainerService.HintSize="546,1145.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                    <Sequence sap:VirtualizedContainerService.HintSize="546,1105.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_46">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screeenshot END KEYBOARD SHORTCUT Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,264" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[in_UiElementOutput]" ScopeGuid="b53c1f99-5e01-4ced-9d57-dd08d7dde35b" Version="V2">
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screeenshot END KEYBOARD SHORTCUT Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,224" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[in_UiElementOutput]" ScopeGuid="b53c1f99-5e01-4ced-9d57-dd08d7dde35b" Version="V2">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
@@ -705,10 +705,18 @@
                       </uix:NApplicationCard>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="484,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Framework\TakeScreenshot.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_Folder">[in_Config("ExScreenshotsFolderPath").ToString]</InArgument>
-                          <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[SysScreenshotPath]</InOutArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_JsonFileName">[in_JsonFileName]</InArgument>
-                          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_Folder">
+                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;ExScreenshotsFolderPath&quot;).ToString" />
+                          </InArgument>
+                          <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">
+                            <VisualBasicReference x:TypeArguments="x:String" ExpressionText="SysScreenshotPath" />
+                          </InOutArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_JsonFileName">
+                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_JsonFileName" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
+                            <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
+                          </InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
